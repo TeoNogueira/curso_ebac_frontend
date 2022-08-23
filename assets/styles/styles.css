@@ -1,0 +1,241 @@
+* {
+
+    box-sizing: border-box; 
+   font-family: sans-serif;
+ 
+}
+
+
+
+body {
+
+    background-image: url("../imgs/bg.jpg");
+    
+
+}
+
+
+
+
+
+/* HEADER */
+
+
+header {
+display: flex;
+width: 100%;
+height: 100%;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+
+}
+
+
+
+ul {
+
+    width: 100%;
+height: 100%;
+    display: flex;
+    list-style: none;
+    letter-spacing: 2px;
+    line-height: 27px;
+    justify-content: space-evenly;
+}
+
+ul li a {
+
+    text-decoration: none;
+
+   
+}
+
+a {
+
+    color: #000;
+
+}
+
+ul li a:hover {
+
+    color:rgb(9, 34, 51)
+
+}
+
+.intro-text {
+
+    font-size: 39px;
+}
+
+
+
+/* Section */
+
+
+section {
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    
+    
+}
+
+article {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+p {
+    width: 150px;
+    
+}
+
+
+article, p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+h3 {
+
+    user-select: none;
+}
+
+
+h1 {
+
+    color: rgb(0, 77, 128);
+}
+
+h3 {
+    
+    color: rgb(23, 119, 36);
+}
+
+h4 {
+
+    color: red;
+}
+
+.text-4 {
+
+    color: gray; 
+}
+
+#text-5 {
+
+    color: rgb(93, 153, 192); 
+}
+
+
+
+
+
+img {
+
+    width: 300px;
+    height: 206px;
+    border-radius: 4px;
+}
+
+img:hover {
+
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+
+
+
+
+
+/* footer */
+
+footer {
+
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: space-between;
+}
+
+
+footer .next {
+    
+    width: 90px;
+    height: 90px;
+   
+
+
+}
+
+
+.next:hover {
+
+
+    opacity: 0.9;
+
+}
+
+
+footer .prev {
+
+
+    width: 80px;
+    height: 80px;
+
+
+
+}
+
+
+/* Begin Page footer*/
+
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.footer .next-index {
+
+    width: 100%;
+    display:flex;
+    
+   
+}
+
+ .next-index {
+    
+    width: 90px;
+    height: 90px;
+
+}
+
+
+.next-index:hover {
+
+    opacity: 0.9;
+
+}
+
+
+
+/* Entretenimento */
+
+.in-text {
+
+    font-size: 25px;
+}
