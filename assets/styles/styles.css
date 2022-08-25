@@ -2,6 +2,8 @@
 
     box-sizing: border-box; 
    font-family: sans-serif;
+   margin: 0;
+   padding: 0;
  
 }
 
@@ -9,12 +11,9 @@
 
 body {
 
-    background-image: url("../imgs/bg.jpg");
+    /* background-image: url("../imgs/bg.jpg"); */
     
-
 }
-
-
 
 
 
@@ -29,6 +28,52 @@ align-items: center;
 flex-direction: column;
 justify-content: center;
 
+}
+
+
+.container-01, .container-02, .container-03 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0 35px 0;
+
+}
+
+/* BG Cont */
+.container-01 {
+    background:rgb(9, 34, 51);
+}
+.container-02 {
+    background: #fffffb;
+}
+
+.container-03 {
+    background:rgb(58, 59, 58);
+
+
+}
+
+/*  */
+
+.container-01 small {
+
+    color: #fffffb;
+}
+.container-01 h2 {
+
+    color: #fffffb;
+}
+
+.container-01 p {
+
+    color: #fffffb;
+}
+
+
+
+.container-02 small, h2, h3, p  {
+
+    color: #000;
 }
 
 
@@ -51,6 +96,8 @@ ul li a {
    
 }
 
+#text { color: #fff !important;}
+
 a {
 
     color: #000;
@@ -65,7 +112,8 @@ ul li a:hover {
 
 .intro-text {
 
-    font-size: 39px;
+    font-size: 89px;
+    text-align: center;
 }
 
 
@@ -95,7 +143,8 @@ article {
 
 p {
     width: 150px;
-    
+    font-size: 12px;
+    margin: 5px 0 5px 0;   
 }
 
 
@@ -106,20 +155,28 @@ article, p {
 
 }
 
-h3 {
-
-    user-select: none;
-}
-
 
 h1 {
 
     color: rgb(0, 77, 128);
+    margin: 0px 0 30px 0;
+    padding-left: 75px;
+
+}
+
+h2 {
+
+    margin: 0 0 5px 0;
+
+
 }
 
 h3 {
     
     color: rgb(23, 119, 36);
+    margin-bottom: 5px;
+    user-select: none;
+
 }
 
 h4 {
@@ -137,7 +194,11 @@ h4 {
     color: rgb(93, 153, 192); 
 }
 
+small {
 
+    font-size: 16px;
+    
+}
 
 
 
@@ -164,78 +225,7 @@ img:hover {
 footer {
 
 width: 100%;
-height: 100%;
-display: flex;
-justify-content: space-between;
-}
+height: 170px;
+background-color: rgb(19, 19, 20);
 
-
-footer .next {
-    
-    width: 90px;
-    height: 90px;
-   
-
-
-}
-
-
-.next:hover {
-
-
-    opacity: 0.9;
-
-}
-
-
-footer .prev {
-
-
-    width: 80px;
-    height: 80px;
-
-
-
-}
-
-
-/* Begin Page footer*/
-
-
-.footer {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-
-.footer .next-index {
-
-    width: 100%;
-    display:flex;
-    
-   
-}
-
- .next-index {
-    
-    width: 90px;
-    height: 90px;
-
-}
-
-
-.next-index:hover {
-
-    opacity: 0.9;
-
-}
-
-
-
-/* Entretenimento */
-
-.in-text {
-
-    font-size: 25px;
 }
