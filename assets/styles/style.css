@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif; 
+}
+
+
+:root {
+    --c-0: #c8d6e5;
+    --c-1: rgb(248, 15, 61);
+    --c-1b: rgb(216, 83, 109);
+    --c-2: #009432;
+    --c-3: rgb(89, 247, 89);
+    --c-3b:rgb(188, 228, 188);
+    --c-4: #b1c2d4;
+    --az-1: #5f27cd;
+    --az-2: #341f97;
+    --bl-1: #000;
+    --bl-2: rgba(0, 0, 0, 0.7);
+}
+
+
+section {
+ 
+
+    position: relative;
+    top: 50px;
+}
+
+
+body {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgb(81, 58, 99) 0%, rgba(63,65,182,1) 35%, rgb(63, 57, 34) 100%);
+    min-height: 100%;
+
+}
+
+h1 {
+    padding-top: 20px;
+    font-size: 50px;
+    color: #fff;
+    user-select: none;
+    cursor: pointer;
+}
+
+h1:hover {
+
+    color: #98eb90;
+
+}
+
+.bd-todolist {
+
+    height: 480px;
+    width: 350px;
+    background: var(--c-0);
+    border-radius: 4px;
+    padding: 10px;
+    overflow-y: auto;
+    box-shadow: 0 4px 9px var(--bl-2);
+
+
+}
+
+
+input:focus {
+   outline: 0;
+}
+
+
+#input {
+
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    background: #666;
+    color: #fff;
+    padding: 0 10px;
+    margin: 15px 0;
+
+}
+
+
+#input::placeholder {
+
+    color: var(--c-4);
+}
+
+
+/* LIST */
+
+ul li {
+
+    color: white;
+    background: #676768;
+    height: 39px;
+    border-radius: 15px;
+    margin: 10px 0;
+    padding: 10px;
+    
+
+}
+
+ul .fa-check {
+
+    position: absolute;
+    right: 45px;
+    color: var(--c-3);
+    
+}
+
+
+.fa-check:hover {
+    color: var(--c-3b);
+    cursor: pointer;
+}
+
+ul .fa-trash {
+
+    position: absolute;
+    right: 20px;
+    color: var(--c-1b);
+    
+
+}
+
+.fa-trash:hover {
+    color: var(--c-1);
+    cursor: pointer;
+}
+
+
+ul .ok-listed {
+
+    background: rgb(57, 196, 154);
+    text-decoration: line-through;
+    transition: 0.5s;
+}
