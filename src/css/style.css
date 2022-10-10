@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(170,186,149,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+
+
+footer {
+    background: #1a7a7e;
+    padding-top: 16px 0;
+    color: #fff;
+}
+
+
+
+ li {
+
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+li a {
+
+    text-decoration: none;
+    color: #fff;
+
+}
+
+
+/* Section Sobre*/
+
+
+.c-f {
+    display: flex;
+}
+
+
+section {
+
+    padding: 48px 0;
+
+}
+
+form h2 {
+
+    margin-bottom: 26px;
+    font-size: 32px;
+    width: 100%;
+    position: relative;
+    left: 92%;
+    justify-content: center;
+}
+
+
+
+.item-center {
+
+    margin: 0 5%;
+
+}
+
+
+ button {
+
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    color: #fff;
+    border: none;
+    background: #20b36e;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 22px;
+}
+
+
+
+.lista-veic li strong {
+
+    margin: 16px 0;
+    display: block;
+}
+
+/*  */
+ button {
+
+    position: relative;
+    left: 90%;
+}
+
+/* FORM */
+
+.form-ground {
+    margin-bottom: 16px;
+    position: relative;
+    left: 90%;
+    
+
+}
+
+.form-ground label {
+
+    font-weight: bold;
+    display: block;
+}
+
+.form-ground input,
+.form-ground textarea {
+
+    width: 100%;
+    display: block;
+    padding: 8px;
+    border: none;
+
+}
+
+
+.form-ground textarea {
+
+    resize: none;
+    height: 120px;
+}
+
+form {
+    width: 100%;
+    max-width: 360px;
+}
+
+form button {
+
+    max-width: 120px;
+}
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    
+}
+
+footer p  {
+
+    user-select: none;
+    cursor: pointer;
+    margin-right: 30px;
+}
