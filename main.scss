@@ -1,0 +1,104 @@
+@use "variables";
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto, sans-serif;
+}
+
+@mixin alternative {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  @include reset;
+}
+
+body {
+  background-color: variables.$background-color;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: variables.$background-color-header;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+header .container {
+  @include alternative;
+  padding: variables.$default 0;
+}
+
+.menu {
+  display: flex;
+}
+.menu li {
+  font-weight: bold;
+  margin-left: 24px;
+}
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: variables.$hg 0;
+}
+.products {
+  margin-top: variables.$hg;
+  display: grid;
+  grid-template-columns: repeat(3, 32.67%);
+  column-gap: 1%;
+  row-gap: 4%;
+  width: 100%;
+  .product-item {
+    img {
+      width: 100%;
+      border-radius: variables.$border-radius;
+    }
+    .product-button {
+      display: block;
+      color: #fff;
+      background-color: variables.$color-button;
+      text-align: center;
+      padding: variables.$lw 0;
+      border-radius: variables.$border-radius-button;
+      margin-top: variables.$lw;
+      text-decoration: none;
+
+      &:hover {
+        background-color: variables.$color-button-hover;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+  }
+  .products {
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .products {
+    display: block;
+    .product-item {
+      margin-bottom: variables.$hg;
+    }
+  }
+}
