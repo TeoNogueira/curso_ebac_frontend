@@ -1,23 +1,17 @@
 {
-  "name": "exe_sass",
+  "name": "grunt",
   "version": "1.0.0",
-  "description": "",
+  "description": "grunt_ebac",
   "main": "index.js",
   "scripts": {
-    "sass": "sass src/main.scss build/main.css --watch",
+    "grunt": "grunt",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/TeoNogueira",
-  "author": "teo_nogueira",
+  "author": "Teo_muniz",
   "license": "ISC",
-  "bugs": {
-    "url": ""
-  },
-  "homepage": "",
   "devDependencies": {
-    "sass": "^1.58.3"
+    "grunt": "^1.6.1",
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-uglify": "^5.2.2"
   }
-}
 }
